@@ -4,8 +4,6 @@ body {
     font-family: Helveticalalala;
     font-size: 22px;
     padding: 20px;
-    width: 100vw;
-    height: 100vh;
 }
 
 h1 {
@@ -36,9 +34,8 @@ h1 {
   
   /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #06fff3;
+    background-color: #ddd;
     color: black;
-    border: 3px solid black;
 }
   
   /* Add a color to the active/current link */
@@ -72,47 +69,3 @@ img {
     width: 250;
     padding-right: 50px;
 }
-
-.button {
-    
-    border: none;
-    color: #06fff3;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 30px 20px;
-    cursor: pointer;
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-self: baseline;
-}
-
-  #randomizer {
-    border: none;
-    color: #06fff3;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 30px 20px;
-    cursor: pointer;
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-self: baseline;
-}
-.person {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: solid 2px green;
-  }
