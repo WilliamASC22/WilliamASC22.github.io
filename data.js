@@ -168,7 +168,7 @@
 
 
 
-
+infoList()
 const data=[
     {
     "results": [
@@ -195,6 +195,7 @@ const data=[
     ]
     }
 ]
+
 function infoList() {
     console.log(data["results"])
 }
