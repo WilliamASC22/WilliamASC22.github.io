@@ -22,6 +22,14 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-self: baseline;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    border-bottom: 2px black solid;
 }
   
   /* Style the links inside the navigation bar */
@@ -38,7 +46,7 @@ h1 {
 .topnav a:hover {
     background-color: #06fff3;
     color: black;
-    border: 3px solid black;
+    border: 0px solid black;
 }
   
   /* Add a color to the active/current link */
@@ -66,6 +74,9 @@ h2 {
 
 .sub_div {
     display: flex;
+    padding: 15px;
+    border: 2px black solid;
+    border-radius: 25px;
 }
 
 img {
@@ -73,8 +84,7 @@ img {
     padding-right: 50px;
 }
 
-.button {
-    
+#toTop {
     border: none;
     color: #06fff3;
     padding: 15px 15px;
@@ -90,6 +100,35 @@ img {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-self: baseline;
+
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    margin: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 50%;
+}
+#toBottom {
+    border: none;
+    color: #06fff3;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 30px 20px;
+    cursor: pointer;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-self: baseline;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
   #randomizer {
