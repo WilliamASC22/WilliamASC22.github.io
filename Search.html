@@ -10,7 +10,7 @@
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
-    <title>Travel</title>
+    <title>Search</title>
 </head>
 <body>
     <h1>William's Website<p id= "WebName"></p></h1>
@@ -22,6 +22,7 @@
         <div><a href="Hobbies.html">Hobbies</a></div>
         <div><a href="Travel.html">Travel</a></div>
         <div><a href="Favorite_Color.html">Favorite Color</a></div>
+        <div><a href="Books.html">Books</a></div>
         <div><a href="Search.html">Google Search</a></div>
     </div>
    
@@ -37,10 +38,13 @@
 
     
     <div class="big_div" id="Travel">
-        <p class="main_idea">Travel</p>
+        <p class="main_idea">Search</p>
         <div class="sub_div">
             <img src="images/search_me.jpg" width="250px" height="200px"/>
             <p>Search google and learn more about William!</p>
+            <div>
+                
+            </div>
             <form role="search" id="form">
                 <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
                 <button class ="SearchButton" id="SearchButton" >
@@ -66,7 +70,7 @@
             function currentDateandTime() {
                 var dt = new Date();
                 document.getElementById('date-time').innerHTML=dt;
-                document.body.innerHTML = document.body.innerHTML.replace("Current Date and Time", " ");
+                document.body.innerHTML = document.body.innerHTML.replace("Date/Time", " ");
             }
         </script>
 

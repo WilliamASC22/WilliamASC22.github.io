@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
+    <title>Books</title>
+</head>
+
+<body>
+    <h1>William's Website<p id= "WebName"></p></h1>
+    
+    <div class="topnav">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="GitHub.html">GitHub</a></div>
+        <div><a href="School.html">School</a></div>
+        <div><a href="Hobbies.html">Hobbies</a></div>
+        <div><a href="Travel.html">Travel</a></div>
+        <div><a href="Favorite_Color.html">Favorite Color</a></div>
+        <div><a href="Books.html">Books</a></div>
+        <div><a href="Search.html">Google Search</a></div>
+    </div>
+
+
+   
+    <button onclick="scrollToBottom()" class="button" id="toBottom">
+        Scroll To Bottom
+    </button>
+      <script>
+          function scrollToBottom() {
+            q=innerWidth
+            window.scrollTo(30,q);
+          }
+      </script>
+
+
+
+    <div class="big_div" id="Favorite Color">
+        <p class="main_idea">Books</p>
+        <div class="sub_div">
+            <img src="images/book.jpg" width="250px" height="200px"/>
+            <p>William has read many books. His favorites are Hatchet, Holes, The Long Walk, Nineteen Eighty-Four, James and the Giant Peach, The Last Mission, The Outsiders, Red Badge of Courage, Rich Dad Poor Dad, The Watch, The Passage, One Shot, and Fight Club.</p>
+        </div>
+    </div>
+
+    <button onclick="scrollToTop()" class="button" id="toTop">
+        Scroll To Top
+    </button>
+      <script>
+          function scrollToTop() {
+            window.scrollTo(30, 0);
+          }
+      </script>
+
+    <button onclick="currentDateandTime()" class="button" id="dateTime">
+        Date/Time  <span id='date-time'></span>
+    </button>
+        <script>
+            function currentDateandTime() {
+                var dt = new Date();
+                document.getElementById('date-time').innerHTML=dt;
+                document.body.innerHTML = document.body.innerHTML.replace("Date/Time", " ");
+            }
+        </script>
+
+<embed src="sounds/Rujay_1151_Crazy_Story.mp3" loop="true" autostart="true" width="2" height="0"></embed>
+
+<div class="big_div">
+<p>
+    Want to get in touch with William? Email William at <a href="mailto:wbhuiyan@stu.allstarcode.org">wbhuiyan@stu.allstarcode.org</a>
+    
+    Music provided by Rujay.
+    Instrumental: "Crazy Story" by Young Gotti.
+    Channel: https://YouTube.com/user/RujayTV.
+
+</body>
+</html>
