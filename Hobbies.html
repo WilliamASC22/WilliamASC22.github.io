@@ -23,6 +23,7 @@
         <div><a href="Hobbies.html">Hobbies</a></div>
         <div><a href="Travel.html">Travel</a></div>
         <div><a href="Favorite_Color.html">Favorite Color</a></div>
+        <div><a href="Search.html">Google Search</a></div>
     </div>
 
    
@@ -51,10 +52,20 @@
     </button>
       <script>
           function scrollToTop() {
-              window.scrollTo(0, 0);
+            window.scrollTo(30, 0);
           }
       </script>
 
+    <button onclick="currentDateandTime()" class="button" id="dateTime">
+        Date/Time  <span id='date-time'></span>
+    </button>
+        <script>
+            function currentDateandTime() {
+                var dt = new Date();
+                document.getElementById('date-time').innerHTML=dt;
+                document.body.innerHTML = document.body.innerHTML.replace("Current Date and Time", " ");
+            }
+        </script>
 
 <embed src="sounds/Rujay_2077_ Tribute.mp3" loop="true" autostart="true" width="2" height="0"></embed>
 

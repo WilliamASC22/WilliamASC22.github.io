@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
+    <title>Travel</title>
+</head>
+<body>
+    <h1>William's Website<p id= "WebName"></p></h1>
+    
+    <div class="topnav">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="GitHub.html">GitHub</a></div>
+        <div><a href="School.html">School</a></div>
+        <div><a href="Hobbies.html">Hobbies</a></div>
+        <div><a href="Travel.html">Travel</a></div>
+        <div><a href="Favorite_Color.html">Favorite Color</a></div>
+        <div><a href="Search.html">Google Search</a></div>
+    </div>
+   
+    <button onclick="scrollToBottom()" class="button" id="toBottom">
+        Scroll To Bottom
+    </button>
+      <script>
+          function scrollToBottom() {
+            q=innerWidth
+            window.scrollTo(30,q);
+          }
+      </script>
+
+    
+    <div class="big_div" id="Travel">
+        <p class="main_idea">Travel</p>
+        <div class="sub_div">
+            <img src="images/search_me.jpg" width="250px" height="200px"/>
+            <p>Search google and learn more about William!</p>
+            <form role="search" id="form">
+                <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                <button class ="SearchButton" id="SearchButton" >
+                  <svg  viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <button onclick="scrollToTop()" class="button" id="toTop">
+        Scroll To Top
+    </button>
+      <script>
+          function scrollToTop() {
+            window.scrollTo(30, 0);
+          }
+      </script>
+
+    <button onclick="currentDateandTime()" class="button" id="dateTime">
+        Date/Time  <span id='date-time'></span>
+    </button>
+        <script>
+            function currentDateandTime() {
+                var dt = new Date();
+                document.getElementById('date-time').innerHTML=dt;
+                document.body.innerHTML = document.body.innerHTML.replace("Current Date and Time", " ");
+            }
+        </script>
+
+<embed src="sounds/Rujay_2223_Be_Something.mp3" loop="true" autostart="true" width="2" height="0"></embed>
+
+<div class="big_div">
+<p>
+    Want to get in touch with William? Email William at <a href="mailto:wbhuiyan@stu.allstarcode.org">wbhuiyan@stu.allstarcode.org</a>
+    
+    Music provided by Rujay.
+    Instrumental: "Be Something" by YoungGotti.
+    Channel: https://YouTube.com/user/RujayTV.
+
+</body>
+</html>
