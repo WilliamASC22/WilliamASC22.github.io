@@ -8,11 +8,12 @@ body {
     height: 100vh;
 }
 
-h1 {
+header {
     color: black;
     text-align: center;
     background-color: none;
     text-decoration: none;
+    font-size: 40px;
 }
 
 /* Add a black background color and flexbox to the top navigation bar*/
@@ -22,7 +23,6 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-self: baseline;
-    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -30,6 +30,8 @@ h1 {
     padding-right: 0px;
     display: flex;
     border-bottom: 2px black solid;
+    border-top: 2px black solid;
+
 }
   
   /* Style the links inside the navigation bar */
@@ -70,6 +72,9 @@ h2 {
     font-size: 150;
     font: bold;
     margin: 10px;
+    padding: 10px;
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
 }
 
 .sub_div {
@@ -77,11 +82,18 @@ h2 {
     padding: 15px;
     border: 2px black solid;
     border-radius: 25px;
+    background-color: grey;
+    color: #06fff3
 }
 
 img {
     width: 250;
     padding-right: 50px;
+}
+
+footer {
+    bottom: 0px;
+    text-align: center;
 }
 
 #toTop {
@@ -108,32 +120,6 @@ img {
     padding-left: 3px;
     padding-right: 3px;
     border-radius: 50%;
-}
-
-#dateTime {
-    border: none;
-    color: #06fff3;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 30px 20px;
-    cursor: pointer;
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-self: baseline;
-    
-    position: fixed;
-    bottom: 0px;
-    left: 0px; 
-    margin: 20px;
-    padding-left: 3px;
-    padding-right: 3px;
-    border-radius: 25%;
 }
 
 #form {
