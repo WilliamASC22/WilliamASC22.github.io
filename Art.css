@@ -1,0 +1,188 @@
+body {
+    background-color: #06fff3;
+    color: black;
+    font-family: Helveticalalala;
+    font-size: 22px;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    color: black;
+    text-align: center;
+    background-color: none;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+/* Add a black background color and flexbox to the top navigation bar*/
+.topnav {
+    background-color: #06fff3;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: baseline;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #06fff3;
+    color: black;
+    border: 0px solid black;
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
+}
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+#big_div {
+    border: 3px solid #ffffff;
+    margin: 30px;
+    padding: 20px;
+}
+
+.main_idea {
+    text-align:center;
+    font-size: 150;
+    font: bold;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
+}
+
+.sub_div {
+    display: flex;
+    padding: 15px;
+    border: 2px black solid;
+    border-radius: 25px;
+    background-color: grey;
+    color: #06fff3;
+}
+
+footer {
+    position:static;
+    bottom: 0px;
+    text-align: center;
+}
+
+#toTop {
+    border: none;
+    color: #06fff3;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 30px 20px;
+    cursor: pointer;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-self: baseline;
+
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    margin: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 50%;
+}
+
+
+#SlideBox {
+    display: flex;
+    padding: 15px;
+    border: 0px black solid;
+    border-radius: 25px;
+    background-color: grey;
+    color: #06fff3;
+}
+
+* {box-sizing: border-box}
+      
+.images {display: none}
+
+img {
+    vertical-align: middle;
+  width:100%;
+}
+
+/* Slideshow container */
+.carousel-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+}
+
+/* Next & previous buttons */
+.previous, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit seethrough */
+.prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.navigation-dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+}
+.active, .navigation-dot:hover {
+   background-color: #717171;
+}

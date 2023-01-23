@@ -18,7 +18,7 @@ header {
 
 /* Add a black background color and flexbox to the top navigation bar*/
 .topnav {
-    background-color: #333;
+    background-color: #06fff3;
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
@@ -29,15 +29,12 @@ header {
     padding-left: 0px;
     padding-right: 0px;
     display: flex;
-    border-bottom: 2px black solid;
-    border-top: 2px black solid;
-
 }
   
   /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #06fff3;
+    color: #333;
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
@@ -49,6 +46,8 @@ header {
     background-color: #06fff3;
     color: black;
     border: 0px solid black;
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
 }
   
   /* Add a color to the active/current link */
@@ -92,6 +91,7 @@ img {
 }
 
 footer {
+    position:static;
     bottom: 0px;
     text-align: center;
 }
