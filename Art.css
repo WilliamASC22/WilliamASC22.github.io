@@ -1,6 +1,6 @@
 body {
-    background-color: #06fff3;
-    color: black;
+    background-color: #96b3b2;
+    color: white;
     font-family: Helveticalalala;
     font-size: 22px;
     padding: 20px;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    color: black;
+    color: white;
     text-align: center;
     background-color: none;
     text-decoration: none;
@@ -18,7 +18,7 @@ header {
 
 /* Add a black background color and flexbox to the top navigation bar*/
 .topnav {
-    background-color: #06fff3;
+    background-color: #96b3b2;
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
@@ -34,7 +34,7 @@ header {
   /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #333;
+    color: white;
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
@@ -43,11 +43,11 @@ header {
   
   /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #06fff3;
-    color: black;
-    border: 0px solid black;
-    border-bottom: 2px black solid;
-    border-top: 2px black solid;
+    background-color: gray;
+    color: white;
+    border: 0px solid white;
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
 }
   
   /* Add a color to the active/current link */
@@ -67,22 +67,27 @@ h2 {
 }
 
 .main_idea {
-    text-align:center;
+    text-align: center;
     font-size: 150;
     font: bold;
     margin: 10px;
     padding: 10px;
-    border-bottom: 2px black solid;
-    border-top: 2px black solid;
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
 }
 
 .sub_div {
     display: flex;
     padding: 15px;
-    border: 2px black solid;
+    border: 2px white solid;
     border-radius: 25px;
     background-color: grey;
-    color: #06fff3;
+    color: white
+}
+
+img {
+    width: 250;
+    padding-right: 50px;
 }
 
 footer {
@@ -91,9 +96,13 @@ footer {
     text-align: center;
 }
 
+.link {
+    color: white;
+}
+
 #toTop {
     border: none;
-    color: #06fff3;
+    color: #96b3b2;
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
@@ -117,6 +126,91 @@ footer {
     border-radius: 50%;
 }
 
+.container {
+    height: 100%;
+  }
+ .bg {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+ }
+
+/* Adding image to each div  
+  Use https://www.linkpicture.com/en/?set=en*/
+  .image1 {
+    background-image: url("https://www.linkpicture.com/q/nature1.jpg");
+  }
+  .image2 {
+    background-image: url("https://www.linkpicture.com/q/nature2_1.jpg");
+  }
+  
+  .image3 {
+    background-image: url("https://www.linkpicture.com/q/nature3_2.jpg");
+  }
+  
+  .image4 {
+    background-image: url("https://www.linkpicture.com/q/nature4.jpg");
+  }
+  
+  .image5 {
+    background-image: url("https://www.linkpicture.com/q/nature5.jpg");
+  }
+  
+  .image6 {
+    background-image: url("https://www.linkpicture.com/q/nature6.jpg");
+  }
+  
+  .image7 {
+    background-image: url("https://www.linkpicture.com/q/nature7.jpg");
+  }
+  
+  .image8 {
+    background-image: url("https://www.linkpicture.com/q/nature8_1.jpg");
+  }
+  
+  .image9 {
+    background-image: url("https://www.linkpicture.com/q/nature9.jpg");
+  }
+  
+  .image10 {
+    background-image: url("https://www.linkpicture.com/q/nature10.jpg");
+  }
+  
+  .image11 {
+    background-image: url("https://www.linkpicture.com/q/nature11.jpg");
+  }
+  
+  .image12 {
+    background-image: url("https://www.linkpicture.com/q/nature12.jpg");
+  }
+  
+  .image13 {
+    background-image: url("https://www.linkpicture.com/q/nature13.jpg");
+  }
+  
+  .image14 {
+    background-image: url("https://www.linkpicture.com/q/nature14.jpg");
+  }
+  
+  .image15 {
+    background-image: url("https://www.linkpicture.com/q/nature15.jpg");
+  }
+  
+  .image16 {
+    background-image: url("https://www.linkpicture.com/q/nature16.jpg");
+  }
+  
+  .image17 {
+    background-image: url("https://www.linkpicture.com/q/nature17.jpg");
+  }
+  
+  .image18 {
+    background-image: url("https://www.linkpicture.com/q/nature18.jpg");
+  }
+
 
 #SlideBox {
     display: flex;
@@ -124,7 +218,7 @@ footer {
     border: 0px black solid;
     border-radius: 25px;
     background-color: grey;
-    color: #06fff3;
+    color: #96b3b2;
 }
 
 * {box-sizing: border-box}

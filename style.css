@@ -1,192 +1,286 @@
 body {
-    background-color: #06fff3;
-    color: black;
-    font-family: Helveticalalala;
-    font-size: 22px;
-    padding: 20px;
-    width: 100vw;
-    height: 100vh;
+  background-color: #96b3b2;
+  color: white;
+  font-family: Helveticalalala;
+  font-size: 22px;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
-    color: black;
-    text-align: center;
-    background-color: none;
-    text-decoration: none;
-    font-size: 40px;
+  color: white;
+  text-align: center;
+  background-color: none;
+  text-decoration: none;
+  font-size: 40px;
 }
 
 /* Add a black background color and flexbox to the top navigation bar*/
 .topnav {
-    background-color: #06fff3;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-evenly;
-    align-self: baseline;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding-left: 0px;
-    padding-right: 0px;
-    display: flex;
+  background-color: #96b3b2;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: baseline;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
 }
-  
-  /* Style the links inside the navigation bar */
+
+/* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    color: #333;
-    text-align: center;
-    padding: 15px 15px;
-    text-decoration: none;
-    font-size: 15px;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 15px;
 }
-  
-  /* Change the color of links on hover */
+
+/* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #06fff3;
-    color: black;
-    border: 0px solid black;
-    border-bottom: 2px black solid;
-    border-top: 2px black solid;
+  background-color: gray;
+  color: white;
+  border: 0px solid white;
+  border-bottom: 2px white solid;
+  border-top: 2px white solid;
 }
-  
-  /* Add a color to the active/current link */
+
+/* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+  background-color: #04AA6D;
+  color: white;
 }
 
 h2 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 #big_div {
-    border: 3px solid #ffffff;
-    margin: 30px;
-    padding: 20px;
+  border: 3px solid #ffffff;
+  margin: 30px;
+  padding: 20px;
 }
 
 .main_idea {
-    text-align: center;
-    font-size: 150;
-    font: bold;
-    margin: 10px;
-    padding: 10px;
-    border-bottom: 2px black solid;
-    border-top: 2px black solid;
+  text-align: center;
+  font-size: 150;
+  font: bold;
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 2px white solid;
+  border-top: 2px white solid;
 }
 
 .sub_div {
-    display: flex;
-    padding: 15px;
-    border: 2px black solid;
-    border-radius: 25px;
-    background-color: grey;
-    color: #06fff3
+  display: flex;
+  padding: 15px;
+  border: 2px white solid;
+  border-radius: 25px;
+  background-color: grey;
+  color: white
 }
 
 img {
-    width: 250;
-    padding-right: 50px;
+  width: 250;
+  padding-right: 50px;
 }
 
 footer {
-    position:static;
-    bottom: 0px;
-    text-align: center;
+  position:static;
+  bottom: 0px;
+  text-align: center;
+  font: italic;
+}
+
+.link {
+  color: white;
 }
 
 #toTop {
-    border: none;
-    color: #06fff3;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 30px 20px;
-    cursor: pointer;
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-self: baseline;
+  border: none;
+  color: #96b3b2;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 30px 20px;
+  cursor: pointer;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-self: baseline;
 
-    position: fixed;
-    bottom: 0px;
-    right: 0px; 
-    margin: 20px;
-    padding-left: 3px;
-    padding-right: 3px;
-    border-radius: 50%;
+  position: fixed;
+  bottom: 0px;
+  right: 0px; 
+  margin: 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 50%;
 }
 
 #form {
-    background-color: #4654e1;
-    width: 300px;
-    height: 44px;
-    border-radius: 5px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    overflow: hidden;
-  }
+  background-color: #4654e1;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  overflow: hidden;
+}
 
-  #query {
-    all: unset;
-    font: 16px system-ui;
-    color: #333;
-    height: 100%;
-    width: 100%;
-    padding: 6px 10px;
-  }
+#query {
+  all: unset;
+  font: 16px system-ui;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
 
-  ::placeholder {
-    color: rgb(0, 0, 0);
-    opacity: 0.7; 
-  }
+::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 0.7; 
+}
 
-  .path1 {
-    color: #333;
-    fill: currentColor;
-    width: 24px;
-    height: 24px;
-    padding: 10px;
-  }
+.path1 {
+  color: #333;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
 
-  .SearchButton {
-    all: unset;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-  }
+.SearchButton {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+.container {
+  height: 100%;
+}
+.bg {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+/* Adding image to each div  
+  Use https://www.linkpicture.com/en/?set=en*/
+.image1 {
+  background-image: url("https://www.linkpicture.com/q/nature1.jpg");
+}
+.image2 {
+  background-image: url("https://www.linkpicture.com/q/nature2_1.jpg");
+}
+
+.image3 {
+  background-image: url("https://www.linkpicture.com/q/nature3_2.jpg");
+}
+
+.image4 {
+  background-image: url("https://www.linkpicture.com/q/nature4.jpg");
+}
+
+.image5 {
+  background-image: url("https://www.linkpicture.com/q/nature5.jpg");
+}
+
+.image6 {
+  background-image: url("https://www.linkpicture.com/q/nature6.jpg");
+}
+
+.image7 {
+  background-image: url("https://www.linkpicture.com/q/nature7.jpg");
+}
+
+.image8 {
+  background-image: url("https://www.linkpicture.com/q/nature8_1.jpg");
+}
+
+.image9 {
+  background-image: url("https://www.linkpicture.com/q/nature9.jpg");
+}
+
+.image10 {
+  background-image: url("https://www.linkpicture.com/q/nature10.jpg");
+}
+
+.image11 {
+  background-image: url("https://www.linkpicture.com/q/nature11.jpg");
+}
+
+.image12 {
+  background-image: url("https://www.linkpicture.com/q/nature12.jpg");
+}
+
+.image13 {
+  background-image: url("https://www.linkpicture.com/q/nature13.jpg");
+}
+
+.image14 {
+  background-image: url("https://www.linkpicture.com/q/nature14.jpg");
+}
+
+.image15 {
+  background-image: url("https://www.linkpicture.com/q/nature15.jpg");
+}
+
+.image16 {
+  background-image: url("https://www.linkpicture.com/q/nature16.jpg");
+}
+
+.image17 {
+  background-image: url("https://www.linkpicture.com/q/nature17.jpg");
+}
+
+.image18 {
+  background-image: url("https://www.linkpicture.com/q/nature18.jpg");
+}
+
+
+
 
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-  #randomizer {
-    border: none;
-    color: #06fff3;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 30px 20px;
-    cursor: pointer;
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-self: baseline;
+#randomizer {
+  border: none;
+  color: #06fff3;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 30px 20px;
+  cursor: pointer;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-self: baseline;
 }
 .person {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: solid 2px green;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 2px green;
+}
+

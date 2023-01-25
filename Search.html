@@ -12,72 +12,84 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
     <title>Search</title>
 </head>
+
 <body>
-    
-    <header>
-        <p>
-            William's Website
-        </p>
-    </header>
-    
-    <div class="topnav">
-        <div><a href="index.html">Home</a></div>
-        <div><a href="GitHub.html">GitHub</a></div>
-        <div><a href="School.html">School</a></div>
-        <div><a href="Hobbies.html">Hobbies</a></div>
-        <div><a href="Travel.html">Travel</a></div>
-        <div><a href="Favorite_Color.html">Favorite Color</a></div>
-        <div><a href="Books.html">Books</a></div>
-        <div><a href="Art.html">Art</a></div>
-        <div><a href="Search.html">Google Search</a></div>
-    </div>
 
-    
-    <div class="big_div" id="Search">
-        <p class="main_idea">Search</p>
-        <div class="sub_div">
-            <img src="images/search_me.jpg" width="250px" height="200px"/>
-            <p>Search google and learn more about William!</p>
-            <div>
-                
-            </div>
-            <form role="search" id="form">
-                <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-                <button class ="SearchButton" id="SearchButton" >
-                  <svg  viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-                </button>
-            </form>
-        </div>
-    </div>
+    <div class="container">
+		<header>
+            <p>
+                <b>
+                    William's Website
+                </b>
+            </p>
+		</header>
+		
+		<div class="topnav">
+			<div><a href="index.html">Home</a></div>
+			<div><a href="GitHub.html">GitHub</a></div>
+			<div><a href="School.html">School</a></div>
+			<div><a href="Hobbies.html">Hobbies</a></div>
+			<div><a href="Travel.html">Travel</a></div>
+			<div><a href="Favorite_Color.html">Favorite Color</a></div>
+			<div><a href="Books.html">Books</a></div>
+			<div><a href="Art.html">Art</a></div>
+			<div><a href="Search.html">Google Search</a></div>
+		</div>
+		
+		<div class="bg image17"></div>
+		<div class="big_div" id="Search">
+			<p class="main_idea">Search</p>
+			<div class="sub_div">
+				<img src="images/search_me.jpg" width="250px" height="200px"/>
+				<p>Search google and learn more about William!</p>
+				<div>
+					
+				</div>
+				<form role="search" id="form">
+					<input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+					<button class ="SearchButton" id="SearchButton" >
+					  <svg  viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="bg image18"></div>
 
-    <button onclick="scrollToTop()" class="button" id="toTop">
+		
+		<div class="big_div">
+			<footer>
+				<div>
+                    <p>
+                        <i>
+                            Want to get in touch with William? Email William at <a href="mailto:wbhuiyan@stu.allstarcode.org" class="link">wbhuiyan@stu.allstarcode.org</a>
+                        </i>
+                    </p>
+				</div>
+				<div>
+                    <p>
+                        <i>
+                            Music provided by Rujay.
+                            Instrumental: "Be Something" by YoungGotti.
+                            Channel: <a href="https://YouTube.com/user/RujayTV." class="link">https://YouTube.com/user/RujayTV.</a>
+                        </i>
+                    </p>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+
+    <embed src="sounds/Rujay_2223_Be_Something.mp3" loop="true" autostart="true" width="2" height="0"></embed>
+
+	<button onclick="scrollToTop()" class="button" id="toTop">
         Scroll To Top
     </button>
       <script>
           function scrollToTop() {
-            window.scrollTo(30, 0);
+              window.scrollTo(30, 0);
           }
       </script>
-
-
-    <embed src="sounds/Rujay_2223_Be_Something.mp3" loop="true" autostart="true" width="2" height="0"></embed>
-
-    <div class="big_div">
-        <footer>
-            <div>
-                <p>
-                    Want to get in touch with William? Email William at <a href="mailto:wbhuiyan@stu.allstarcode.org">wbhuiyan@stu.allstarcode.org</a>
-                </p>
-            </div>
-            <div>
-                <p>
-                    Music provided by Rujay.
-                    Instrumental: "Crazy Story" by Young Gotti.
-                    Channel: <a href="https://YouTube.com/user/RujayTV.">https://YouTube.com/user/RujayTV.</a>
-                </p>
-            </div>
-        </footer>
-    </div>
 
 </body>
 </html>
