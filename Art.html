@@ -8,6 +8,7 @@
     <script src="Art.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
+	<link id="theme" rel="stylesheet" type="text/css" href="light-theme.css" />
     <title>Art</title>
 </head>
 
@@ -35,11 +36,34 @@
 		</div>
 		
 		<div class="bg image15"></div>
+
+		<button id="theme-toggle">Dark Mode</button>
+            <script>
+                // this one is just to wait for the page to load
+                document.addEventListener('DOMContentLoaded', () => {
+
+                    const themeStylesheet = document.getElementById('theme');
+                    const themeToggle = document.getElementById('theme-toggle');
+                    themeToggle.addEventListener('click', () => {
+                        // if it's light -> go dark
+                        if(themeStylesheet.href.includes('light')){
+                            themeStylesheet.href = 'darkStyle.css';
+                            themeToggle.innerText = 'Light Mode';
+                        } else {
+                            // if it's dark -> go light
+                        themeStylesheet.href = 'style.css';
+                        themeToggle.innerText = 'Dark Mode';
+
+                        }
+                    })
+                })
+                </script>
+
 		<div class="big_div" id="Art">
 			<p class="main_idea">Art</p>
 			<div class="sub_div">
-				<p></p>
-					William has created many art work, some of which are portrayed. The first is named "Coastal". The second is named "Infinite Box". The third is named "Autumn Leaf". The fourth is named "Light Speed". The fifth is named "Trap". The sixth is named "Infinite Triangle". The seventh is named "Childhood Memories".  
+				<p>
+					William has created many art work, some of which are portrayed. The first is named "Coastal". The second is named "Infinite Box". The third is named "Autumn Leaf". The fourth is named "Light Speed". The fifth is named "Trap". The sixth is named "Infinite Triangle". The seventh is named "Childhood Memories". The eighth is named "Liberty". The ninth is named "Soaring Skyscrapers". The tenth is named "Mountain Handkerchief". The eleventh is named "Revolutionary Bottle".
 				</p>
 	
 				<div id="SlideBox">
@@ -71,6 +95,22 @@
 						<div class="images fade">
 							<img src="images/drawing_7.jpg">
 						</div>
+
+						<div class="images fade">
+							<img src="images/drawing_8.jpg">
+						</div>
+
+						<div class="images fade">
+							<img src="images/drawing_9.jpg">
+						</div>
+
+						<div class="images fade">
+							<img src="images/drawing_10.jpg">
+						</div>
+
+						<div class="images fade">
+							<img src="images/drawing_11.1.jpg">
+						</div>
 			
 							<!-- Previous and Next Buttons -->
 							<a class="previous" onclick="plusSlides(-1)">❮</a>
@@ -87,6 +127,10 @@
 						<span class="navigation-dot" onclick="currentSlide(5)"></span>
 						<span class="navigation-dot" onclick="currentSlide(6)"></span>
 						<span class="navigation-dot" onclick="currentSlide(7)"></span>
+						<span class="navigation-dot" onclick="currentSlide(8)"></span>
+						<span class="navigation-dot" onclick="currentSlide(9)"></span>
+						<span class="navigation-dot" onclick="currentSlide(10)"></span>
+						<span class="navigation-dot" onclick="currentSlide(11)"></span>
 					</div>
 				</div>
 				

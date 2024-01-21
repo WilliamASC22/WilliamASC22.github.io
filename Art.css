@@ -8,6 +8,32 @@ body {
     height: 100vh;
 }
 
+#theme-toggle {
+  border: none;
+  color: #96b3b2;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 30px 20px;
+  cursor: pointer;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-self: baseline;
+
+  position: fixed;
+  top: 0px;
+  right: 0px; 
+  margin: 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 50%;
+}
+
 header {
     color: white;
     text-align: center;
@@ -139,77 +165,79 @@ footer {
  }
 
 /* Adding image to each div  
-  Use https://www.linkpicture.com/en/?set=en*/
-  .image1 {
-    background-image: url("https://www.linkpicture.com/q/nature1.jpg");
-  }
-  .image2 {
-    background-image: url("https://www.linkpicture.com/q/nature2_1.jpg");
-  }
+  Use https://stocksnap.io/search/nature*/
   
-  .image3 {
-    background-image: url("https://www.linkpicture.com/q/nature3_2.jpg");
-  }
-  
-  .image4 {
-    background-image: url("https://www.linkpicture.com/q/nature4.jpg");
-  }
-  
-  .image5 {
-    background-image: url("https://www.linkpicture.com/q/nature5.jpg");
-  }
-  
-  .image6 {
-    background-image: url("https://www.linkpicture.com/q/nature6.jpg");
-  }
-  
-  .image7 {
-    background-image: url("https://www.linkpicture.com/q/nature7.jpg");
-  }
-  
-  .image8 {
-    background-image: url("https://www.linkpicture.com/q/nature8_1.jpg");
-  }
-  
-  .image9 {
-    background-image: url("https://www.linkpicture.com/q/nature9.jpg");
-  }
-  
-  .image10 {
-    background-image: url("https://www.linkpicture.com/q/nature10.jpg");
-  }
-  
-  .image11 {
-    background-image: url("https://www.linkpicture.com/q/nature11.jpg");
-  }
-  
-  .image12 {
-    background-image: url("https://www.linkpicture.com/q/nature12.jpg");
-  }
-  
-  .image13 {
-    background-image: url("https://www.linkpicture.com/q/nature13.jpg");
-  }
-  
-  .image14 {
-    background-image: url("https://www.linkpicture.com/q/nature14.jpg");
-  }
-  
-  .image15 {
-    background-image: url("https://www.linkpicture.com/q/nature15.jpg");
-  }
-  
-  .image16 {
-    background-image: url("https://www.linkpicture.com/q/nature16.jpg");
-  }
-  
-  .image17 {
-    background-image: url("https://www.linkpicture.com/q/nature17.jpg");
-  }
-  
-  .image18 {
-    background-image: url("https://www.linkpicture.com/q/nature18.jpg");
-  }
+.image1 {
+  background-image: url(/nature/Nature01.jpg); 
+}
+.image2 {
+  background-image: url(/nature/Nature02.jpg); 
+}
+
+.image3 {
+  background-image: url(/nature/Nature03.jpg); 
+}
+
+.image4 {
+  background-image: url(/nature/Nature04.jpg); 
+}
+
+.image5 {
+  background-image: url(/nature/Nature05.jpg); 
+}
+
+.image6 {
+  background-image: url(/nature/Nature06.jpg); 
+}
+
+.image7 {
+  background-image: url(/nature/Nature07.jpg); 
+}
+
+.image8 {
+  background-image: url(/nature/Nature08.jpg); 
+}
+
+.image9 {
+  background-image: url(/nature/Nature09.jpg); 
+}
+
+.image10 {
+  background-image: url(/nature/Nature010.jpg); 
+}
+
+.image11 {
+  background-image: url(/nature/Nature011.jpg); 
+}
+
+.image12 {
+  background-image: url(/nature/Nature012.jpg); 
+}
+
+.image13 {
+  background-image: url(/nature/Nature013.jpg); 
+}
+
+.image14 {
+  background-image: url(/nature/Nature014.jpg); 
+}
+
+.image15 {
+  background-image: url(/nature/Nature015.jpg); 
+}
+
+.image16 {
+  background-image: url(/nature/Nature016.jpg); 
+}
+
+.image17 {
+  background-image: url(/nature/Nature017.jpg); 
+}
+
+.image18 {
+  background-image: url(/nature/Nature018.jpg); 
+}
+
 
 
 #SlideBox {

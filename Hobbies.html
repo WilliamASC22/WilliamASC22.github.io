@@ -10,6 +10,7 @@
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
+    <link id="theme" rel="stylesheet" type="text/css" href="light-theme.css" />
     <title>Hobbies</title>
 </head>
 
@@ -37,10 +38,33 @@
 		</div>
 		
 		<div class="bg image7"></div>
+
+        <button id="theme-toggle">Dark Mode</button>
+        <script>
+            // this one is just to wait for the page to load
+            document.addEventListener('DOMContentLoaded', () => {
+
+                const themeStylesheet = document.getElementById('theme');
+                const themeToggle = document.getElementById('theme-toggle');
+                themeToggle.addEventListener('click', () => {
+                    // if it's light -> go dark
+                    if(themeStylesheet.href.includes('light')){
+                        themeStylesheet.href = 'darkStyle.css';
+                        themeToggle.innerText = 'Light Mode';
+                    } else {
+                        // if it's dark -> go light
+                    themeStylesheet.href = 'style.css';
+                    themeToggle.innerText = 'Dark Mode';
+
+                    }
+                })
+            })
+            </script>
+
 		<div class="big_div" id="Hobbies">
 			<p class="main_idea">Hobbies</p>
 			<div class="sub_div">
-				<img src="images/hobbies_symbol.png" width="250px" height="200px"/>
+				<img src="images/football_feild.jpg" width="250px" height="200px"/>
 				<p>William has many hobbies. He enjoys playing sports like soccer, football, kickball, badminton, and basketball. He also enjoys reading books, gaming, programing, and traveling.</p>
 			</div>
 		</div>
