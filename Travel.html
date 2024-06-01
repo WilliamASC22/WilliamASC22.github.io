@@ -32,10 +32,14 @@
 			<div><a href="School.html">School</a></div>
 			<div><a href="Hobbies.html">Hobbies</a></div>
 			<div><a href="Travel.html">Travel</a></div>
-			<div><a href="Favorite_Color.html">Favorite Color</a></div>
+			<div><a href="Projects.html">Projects</a></div>
 			<div><a href="Books.html">Books</a></div>
 			<div><a href="Art.html">Art</a></div>
 			<div><a href="Social_Media.html">Social Media</a></div>
+            <div><a href="Calculator.html">Calculator</a></div>
+            <div><a href="Stopwatch.html">Stopwatch</a></div>
+            <div><a href="Digital_Watch.html">Digital Watch</a></div>
+            <div><a href="Analog_Watch.html">Analog Watch</a></div>
 		</div>
 		
 		<div class="bg image9"></div>
@@ -44,23 +48,21 @@
         <script>
             // this one is just to wait for the page to load
             document.addEventListener('DOMContentLoaded', () => {
-
                 const themeStylesheet = document.getElementById('theme');
                 const themeToggle = document.getElementById('theme-toggle');
                 themeToggle.addEventListener('click', () => {
                     // if it's light -> go dark
-                    if(themeStylesheet.href.includes('light')){
+                    if (themeStylesheet.href.includes('style.css')) {
                         themeStylesheet.href = 'darkStyle.css';
                         themeToggle.innerText = 'Light Mode';
                     } else {
                         // if it's dark -> go light
-                    themeStylesheet.href = 'style.css';
-                    themeToggle.innerText = 'Dark Mode';
-
+                        themeStylesheet.href = 'style.css';
+                        themeToggle.innerText = 'Dark Mode';
                     }
-                })
-            })
-            </script>
+                });
+            });
+        </script>
 
 		<div class="big_div" id="Travel">
 			<p class="main_idea">Travel</p>
@@ -85,13 +87,13 @@
 					<a href="https://twitter.com/asc_william?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @asc_william</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 				<div>
-                    <p>
+                    <!-- <p>
                         <i>
                             Music provided by Rujay.
                             Instrumental: "Die For You" by Deemax.
                             Channel: <a href="https://YouTube.com/user/RujayTV." class="link">https://YouTube.com/user/RujayTV.</a>
                         </i>
-                    </p>
+                    </p> -->
 				</div>
 			</footer>
 		</div>
@@ -99,7 +101,7 @@
 
 	</div>
 
-    <embed src="sounds/Rujay_2058_Die For You.mp3" loop="true" autostart="true" width="2" height="0"></embed>
+    <!-- <embed src="sounds/Rujay_2058_Die For You.mp3" loop="true" autostart="true" width="2" height="0"></embed> -->
 
 	<button onclick="scrollToTop()" class="button" id="toTop">
         Scroll To Top

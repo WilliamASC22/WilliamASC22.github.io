@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
+    <link id="theme" rel="stylesheet" type="text/css" href="light-theme.css" />
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <div class="container">
+		<header>
+            <p>
+                <b>
+                    William's Website
+                </b>
+            </p>
+		</header>
+		
+		<div class="topnav">
+			<div><a href="index.html">Home</a></div>
+			<div><a href="GitHub.html">GitHub</a></div>
+			<div><a href="School.html">School</a></div>
+			<div><a href="Hobbies.html">Hobbies</a></div>
+			<div><a href="Travel.html">Travel</a></div>
+			<div><a href="Projects.html">Projects</a></div>
+			<div><a href="Books.html">Books</a></div>
+			<div><a href="Art.html">Art</a></div>
+			<div><a href="Social_Media.html">Social Media</a></div>
+            <div><a href="Calculator.html">Calculator</a></div>
+            <div><a href="Stopwatch.html">Stopwatch</a></div>
+            <div><a href="Digital_Watch.html">Digital Watch</a></div>
+            <div><a href="Analog_Watch.html">Analog Watch</a></div>
+		</div>
+		
+		<div class="bg image23"></div>
+
+        <button id="theme-toggle">Dark Mode</button>
+        <script>
+            // this one is just to wait for the page to load
+            document.addEventListener('DOMContentLoaded', () => {
+                const themeStylesheet = document.getElementById('theme');
+                const themeToggle = document.getElementById('theme-toggle');
+                themeToggle.addEventListener('click', () => {
+                    // if it's light -> go dark
+                    if (themeStylesheet.href.includes('style.css')) {
+                        themeStylesheet.href = 'darkStyle.css';
+                        themeToggle.innerText = 'Light Mode';
+                    } else {
+                        // if it's dark -> go light
+                        themeStylesheet.href = 'style.css';
+                        themeToggle.innerText = 'Dark Mode';
+                    }
+                });
+            });
+        </script>
+
+		<div class="big_div" id="Projects">
+			<p class="main_idea">Digital Watch Project</p>
+			<div class="sub_div">
+				<div id="ProjectPage">
+                    <div class="watch">
+                        <div class="time-display" id="time-display">--:--:--</div>
+                        <div class="watch-controls">
+                            <select id="timezone-select">
+                                <option value="UTC">UTC</option>
+                                <option value="America/New_York">New York (UTC-5)</option>
+                                <option value="Europe/London">London (UTC+0)</option>
+                                <option value="Europe/Paris">Paris (UTC+1)</option>
+                                <option value="Asia/Tokyo">Tokyo (UTC+9)</option>
+                                <option value="Australia/Sydney">Sydney (UTC+10)</option>
+                                <option value="America/Los_Angeles">Los Angeles (UTC-8)</option>
+                                <option value="America/Chicago">Chicago (UTC-6)</option>
+                                <option value="America/Denver">Denver (UTC-7)</option>
+                                <option value="Europe/Berlin">Berlin (UTC+1)</option>
+                                <option value="Europe/Moscow">Moscow (UTC+3)</option>
+                                <option value="Asia/Kolkata">Kolkata (UTC+5:30)</option>
+                                <option value="Asia/Shanghai">Shanghai (UTC+8)</option>
+                                <option value="Pacific/Auckland">Auckland (UTC+12)</option>
+                                <option value="Pacific/Fiji">Fiji (UTC+12)</option>
+                                <option value="Pacific/Guam">Guam (UTC+10)</option>
+                                <option value="Asia/Tokyo">Tokyo (UTC+9)</option>
+                                <option value="Asia/Seoul">Seoul (UTC+9)</option>
+                                <option value="Asia/Singapore">Singapore (UTC+8)</option>
+                                <option value="Asia/Shanghai">Shanghai (UTC+8)</option>
+                                <option value="Asia/Hong_Kong">Hong Kong (UTC+8)</option>
+                                <option value="Asia/Bangkok">Bangkok (UTC+7)</option>
+                                <option value="Asia/Jakarta">Jakarta (UTC+7)</option>
+                                <option value="Asia/Kolkata">Kolkata (UTC+5:30)</option>
+                                <option value="Asia/Dubai">Dubai (UTC+4)</option>
+                                <option value="Europe/Moscow">Moscow (UTC+3)</option>
+                                <option value="Europe/Istanbul">Istanbul (UTC+3)</option>
+                                <option value="Europe/Helsinki">Helsinki (UTC+2)</option>
+                                <option value="Europe/Athens">Athens (UTC+2)</option>
+                                <option value="Europe/Berlin">Berlin (UTC+1)</option>
+                                <option value="Europe/Paris">Paris (UTC+1)</option>
+                                <option value="Europe/London">London (UTC+0)</option>
+                                <option value="Africa/Johannesburg">Johannesburg (UTC+2)</option>
+                                <option value="Africa/Cairo">Cairo (UTC+2)</option>
+                                <option value="Africa/Lagos">Lagos (UTC+1)</option>
+                                <option value="Australia/Sydney">Sydney (UTC+10)</option>
+                                <option value="Australia/Melbourne">Melbourne (UTC+10)</option>
+                                <option value="Australia/Perth">Perth (UTC+8)</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const timeDisplay = document.getElementById('time-display');
+                            const timezoneSelect = document.getElementById('timezone-select');
+                
+                            function updateTime() {
+                                const now = new Date();
+                                const selectedTimezone = timezoneSelect.value;
+                                const options = {
+                                    timeZone: selectedTimezone,
+                                    hour: '2-digit',
+                                    minute: '2-digit',
+                                    second: '2-digit',
+                                    hour12: false
+                                };
+                                const timeString = new Intl.DateTimeFormat('en-US', options).format(now);
+                                timeDisplay.textContent = timeString;
+                            }
+                
+                            timezoneSelect.addEventListener('change', updateTime);
+                            setInterval(updateTime, 1000);
+                            updateTime(); // Initial call to set the time immediately
+                        });
+                    </script>
+
+                    <p>
+                        You can use the controls to change the digital watch to show the timezone of the place you want. There are 37 options to chose from, besides the initial UTC time.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    
+        <div class="bg image24"></div>
+
+		
+		<div class="big_div">
+			<footer>
+				<div>
+                    <p>
+                        <i>
+                            Want to get in touch with William? Email William at <a href="mailto:wbhuiyan@stu.allstarcode.org" class="link">wbhuiyan@stu.allstarcode.org</a>
+                        </i>
+                    </p>
+				</div>
+                <div>
+					<a href="https://twitter.com/asc_william?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @asc_william</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</footer>
+		</div>
+
+        <button onclick="scrollToTop()" class="button" id="toTop">
+            Scroll To Top
+        </button>
+        <script>
+            function scrollToTop() {
+                window.scrollTo(30, 0);
+            }
+        </script>
+    </div>
+</body>
+</html>

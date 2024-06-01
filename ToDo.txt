@@ -1,0 +1,3 @@
+Change images for files Analog Watch, Digital Watch, Stopwatch, and Calculator
+Format the analog watch
+Create a calender

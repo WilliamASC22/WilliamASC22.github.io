@@ -289,7 +289,86 @@ body {
   .image18 {
     background-image: url(/nature/Nature018.jpg); 
   }
+
+  .calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: white;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+
+#calculatorBtn {
+    background-color: #96b3b2;
+    color: #333;
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #96b3b2;
+    color: #333;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+
+input:active[type=button] {
+    background: white;
+    -webkit-box-shadow: inset 0px 0px 5px white;
+    -moz-box-shadow: inset 0px 0px 5px white;
+    box-shadow: inset 0px 0px 5px white;
+}
   
+.stopwatch {
+  background-color: #333;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #96b3b2;
+  text-align: center;
+}
+.stopwatchDisplay {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.stopwatchControls {
+  display: flex;
+  justify-content: space-between;
+}
+.stopwatchControls button {
+  background-color: #96b3b2;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.stopwatchControls button:active {
+  background-color: white;
+}
+#resetStopwatch {
+  background-color: #96b3b2;
+}
+#resetStopwatch:active {
+  background-color: white;
+}
+
   
   
   

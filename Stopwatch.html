@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" defer></script>
+    <link id="theme" rel="stylesheet" type="text/css" href="light-theme.css" />
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <div class="container">
+		<header>
+            <p>
+                <b>
+                    William's Website
+                </b>
+            </p>
+		</header>
+		
+		<div class="topnav">
+			<div><a href="index.html">Home</a></div>
+			<div><a href="GitHub.html">GitHub</a></div>
+			<div><a href="School.html">School</a></div>
+			<div><a href="Hobbies.html">Hobbies</a></div>
+			<div><a href="Travel.html">Travel</a></div>
+			<div><a href="Projects.html">Projects</a></div>
+			<div><a href="Books.html">Books</a></div>
+			<div><a href="Art.html">Art</a></div>
+			<div><a href="Social_Media.html">Social Media</a></div>
+            <div><a href="Calculator.html">Calculator</a></div>
+            <div><a href="Stopwatch.html">Stopwatch</a></div>
+            <div><a href="Digital_Watch.html">Digital Watch</a></div>
+            <div><a href="Analog_Watch.html">Analog Watch</a></div>
+		</div>
+		
+		<div class="bg image22"></div>
+
+        <button id="theme-toggle">Dark Mode</button>
+        <script>
+            // this one is just to wait for the page to load
+            document.addEventListener('DOMContentLoaded', () => {
+                const themeStylesheet = document.getElementById('theme');
+                const themeToggle = document.getElementById('theme-toggle');
+                themeToggle.addEventListener('click', () => {
+                    // if it's light -> go dark
+                    if (themeStylesheet.href.includes('style.css')) {
+                        themeStylesheet.href = 'darkStyle.css';
+                        themeToggle.innerText = 'Light Mode';
+                    } else {
+                        // if it's dark -> go light
+                        themeStylesheet.href = 'style.css';
+                        themeToggle.innerText = 'Dark Mode';
+                    }
+                });
+            });
+        </script>
+
+		<div class="big_div" id="Projects">
+			<p class="main_idea">Stopwatch Project</p>
+			<div class="sub_div">
+				<div id="ProjectPage">
+                    <div class="stopwatch">
+                        <div class="stopwatchDisplay" id="stopwatchDisplay">00:00:00</div>
+                        <div class="stopwatchControls">
+                            <button id="startStopStopwatch" onclick="toggleStopwatch()">Start</button>
+                            <button id="resetStopwatch" onclick="resetStopwatch()">Reset</button>
+                        </div>
+                    </div>
+                
+                    <script>
+                        let startTime, newTime, difference;
+                        let timerInterval;
+                        let running = false;
+                
+                        function toggleStopwatch() {
+                            if (!running) {
+                                startStopwatch();
+                            } 
+                            else {
+                                stopStopwatch();
+                            }
+                        }
+                
+                        function startStopwatch() {
+                            startTime = new Date().getTime() - (difference || 0);
+                            timerInterval = setInterval(updateTime, 1000);
+                            document.getElementById("startStopStopwatch").textContent = "Stop";
+                            running = true;
+                        }
+                
+                        function stopStopwatch() {
+                            clearInterval(timerInterval);
+                            difference = new Date().getTime() - startTime;
+                            document.getElementById("startStopStopwatch").textContent = "Start";
+                            running = false;
+                        }
+                
+                        function resetStopwatch() {
+                            clearInterval(timerInterval);
+                            document.getElementById('stopwatchDisplay').textContent = '00:00:00';
+                            startTime = 0;
+                            newTime = 0;
+                            difference = 0;
+                            running = false;
+                            document.getElementById("startStopStopwatch").textContent = "Start";
+                        }
+                
+                        function updateTime() {
+                            newTime = new Date().getTime();
+                            difference = newTime - startTime;
+                
+                            let totalSeconds = Math.floor(difference / 1000);
+                            let hours = Math.floor(totalSeconds / 3600);
+                            let minutes = Math.floor((totalSeconds - (hours * 3600)) / 60);
+                            let seconds = totalSeconds - (hours * 3600) - (minutes * 60);
+                
+                            if (hours < 10) {
+                                hours = '0' + hours;
+                            }
+                            if (minutes < 10) {
+                                minutes = '0' + minutes;
+                            }
+                            if (seconds < 10) {
+                                seconds = '0' + seconds;
+                            }
+                
+                            document.getElementById('stopwatchDisplay').textContent = hours + ':' + minutes + ':' + seconds;
+                        }
+                
+                        document.addEventListener('keydown', function(event) {
+                            if (event.code === 'Space') {
+                                toggleStopwatch();
+                            }
+                            if (event.code === 'KeyR') {
+                                resetStopwatch();
+                            }
+                        });
+                
+                    </script>
+                    
+                    <p>
+                        You can use the buttons provided to control the stop watch, or use the keys on your computer. The space bar can start and stop the stopwatch. The "R" key can reset the stopwatch.                        
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    
+        <div class="bg image21"></div>
+
+		
+		<div class="big_div">
+			<footer>
+				<div>
+                    <p>
+                        <i>
+                            Want to get in touch with William? Email William at <a href="mailto:wbhuiyan@stu.allstarcode.org" class="link">wbhuiyan@stu.allstarcode.org</a>
+                        </i>
+                    </p>
+				</div>
+                <div>
+					<a href="https://twitter.com/asc_william?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @asc_william</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</footer>
+		</div>
+
+        <button onclick="scrollToTop()" class="button" id="toTop">
+            Scroll To Top
+        </button>
+        <script>
+            function scrollToTop() {
+                window.scrollTo(30, 0);
+            }
+        </script>
+    </div>
+</body>
+</html>
