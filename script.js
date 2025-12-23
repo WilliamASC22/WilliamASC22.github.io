@@ -83,3 +83,47 @@
 //         )
 //     }
 // }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const themeStylesheet = document.getElementById("theme");
+  const themeToggle = document.getElementById("theme-toggle");
+
+  // If either element is missing, do nothing
+  if (themeStylesheet == null) {
+    return;
+  }
+  if (themeToggle == null) {
+    return;
+  }
+
+  // Load saved theme, default to light
+  let saved = localStorage.getItem("theme");
+  if (saved == null) {
+    saved = "light";
+  }
+
+  if (saved == "dark") {
+    themeStylesheet.href = "darkStyle.css";
+    themeToggle.innerText = "Light Mode";
+  } else {
+    themeStylesheet.href = "style.css";
+    themeToggle.innerText = "Dark Mode";
+  }
+
+  themeToggle.addEventListener("click", () => {
+
+    // If currently using style.css -> switch to darkStyle.css
+    if (themeStylesheet.href.indexOf("style.css") != -1) {
+      themeStylesheet.href = "darkStyle.css";
+      themeToggle.innerText = "Light Mode";
+      localStorage.setItem("theme", "dark");
+    } else {
+      themeStylesheet.href = "style.css";
+      themeToggle.innerText = "Dark Mode";
+      localStorage.setItem("theme", "light");
+    }
+
+  });
+
+});
