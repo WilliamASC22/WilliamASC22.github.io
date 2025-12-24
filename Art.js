@@ -105,10 +105,3 @@ function showSlides(n) {
   });
 })();
 
-
-// Thumbnail loader
-window.addEventListener("load", () => {
-  document.querySelectorAll(".projectThumb").forEach(img => {
-    img.src = img.dataset.src;
-  });
-});
