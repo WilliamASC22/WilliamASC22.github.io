@@ -127,8 +127,14 @@
             <a href="https://williamasc22.github.io/" target="_blank" rel="noopener noreferrer">
             <div class="projectThumbnail">
                 <img
-                src="https://opengraph.githubassets.com/1/WilliamASC22/"
-                alt="Real Estate App" />
+                data-src="https://opengraph.githubassets.com/1/WilliamASC22/"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                class="projectThumb"
+                alt="Real Estate App thumbnail refused to load, please reload the page to see thumbnail =.=" 
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                />
             </div>
             </a>
             <div class="projectDescription">
@@ -141,8 +147,14 @@
             <a href="https://github.com/WilliamASC22/tryingoutbackend" target="_blank" rel="noopener noreferrer">
             <div class="projectThumbnail">
                 <img 
-                src="https://opengraph.githubassets.com/1/WilliamASC22/tryingoutbackend"
-                alt="Web server project preview" />
+                data-src="https://opengraph.githubassets.com/1/WilliamASC22/tryingoutbackend"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                class="projectThumb"
+                alt="Web server project thumbnail refused to load, please reload the page to see thumbnail =.="
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                />
             </div>
             </a>
             <div class="projectDescription">
@@ -156,8 +168,14 @@
             <a href="https://williamasc22.github.io/codepathfiles/" target="_blank">
             <div class="projectThumbnail">
                 <img 
-                src="https://s0.wp.com/mshots/v1/https://williamasc22.github.io/codepathfiles/?w=800"
-                alt="Event website preview">
+                data-src="https://s0.wp.com/mshots/v1/https://williamasc22.github.io/codepathfiles/?w=800"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                class="projectThumb"
+                alt="Event website thumbnail refused to load, please reload the page to see thumbnail =.="
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                />
             </div>
             </a>
             <div class="projectDescription">
@@ -171,8 +189,14 @@
             <a href="https://github.com/WilliamASC22/Trying_Out_OCaml" target="_blank" rel="noopener noreferrer">
             <div class="projectThumbnail">
                 <img 
-                src="https://opengraph.githubassets.com/1/WilliamASC22/Trying_Out_OCaml"
-                alt="OCaml interpreter project preview" />
+                data-src="https://opengraph.githubassets.com/1/WilliamASC22/Trying_Out_OCaml"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                class="projectThumb"
+                alt="OCaml interpreter project thumbnail refused to load, please reload the page to see thumbnail =.="
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+                />
             </div>
             </a>
             <div class="projectDescription">
@@ -185,7 +209,7 @@
         </div>
 
         <div style="margin-top: 10px;">
-        Other Projects: Event Website, Environmentally Friendly Trash Collecting Robot, Mu Gamma Chapter of Theta Tau Website, Recycling App, p5 Game, Calculator, Stopwatch, Digital Clock, Analog Clock
+        Other Projects: Environmentally Friendly Trash Collecting Robot, Mu Gamma Chapter of Theta Tau Website, Recycling App, p5 Game, Calculator, Stopwatch, Digital Clock, Analog Clock
         </div>
     </div>
     </div>
@@ -270,68 +294,8 @@
     </div>
     </div>
 
-    <!-- Email reveal script -->
-    <script type="text/javascript">
-        (() => {
-            const btn = document.getElementById("emailToggle");
-            const out = document.getElementById("emailReveal");
-            if (!btn || !out) return;
-
-            let shown = false;
-
-            const codes = [
-            119,98,104,117,105,121,97,110,64,98,117,102,102,97,108,111,46,101,100,117
-            ];
-
-            function buildEmail() {
-            return String.fromCharCode(...codes);
-            }
-
-            btn.addEventListener("click", () => {
-            shown = !shown;
-
-            if (!shown) {
-                out.style.opacity = 0;
-                out.textContent = "";
-                return;
-            }
-
-            setTimeout(() => {
-                out.textContent = buildEmail();
-                out.style.opacity = 1;
-            }, 150);
-            });
-        })();
-    </script>
-
-
-
-    <!-- Dark mode button script -->
-    <script>
-        const btn = document.getElementById("themeToggle");
-
-        // load saved theme or default to light
-        const saved = localStorage.getItem("theme");
-        if (saved) document.documentElement.setAttribute("data-theme", saved);
-
-        function setIcon() {
-            const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-            btn.textContent = isDark ? "☀️" : "🌙";
-        }
-        setIcon();
-
-        btn.addEventListener("click", () => {
-            const current = document.documentElement.getAttribute("data-theme");
-            const next = current === "dark" ? "light" : "dark";
-            document.documentElement.setAttribute("data-theme", next);
-            localStorage.setItem("theme", next);
-            setIcon();
-        });
-    </script>
-
-
   </body>
 
 </html>
 
-<!-- Credit to https://karpathy.ai/ for the website design idea -->
+<!-- Credit to https://karpathy.ai/ for the website design idea! -->
