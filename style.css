@@ -9,7 +9,8 @@
   --card-bg: #ffffff;
   --card-border: #dddddd;
   --timeline: #cfcfcf;
-  --darklight: #cfcfcf;
+  --dark-light-button-background: #cfcfcf;
+  --featured-project-background: rgba(0,0,0,0.06);
 }
 
 html[data-theme="dark"]{
@@ -20,7 +21,8 @@ html[data-theme="dark"]{
   --card-bg: #121621;
   --card-border: #2a3242;
   --timeline: #3a4252;
-  --darklight: #ffffff;
+  --dark-light-button-background: #ffffff;
+  --featured-project-background: #38425a;
 }
 
 body{
@@ -249,6 +251,16 @@ html[data-theme="dark"] hr{
   }
 }
 
+.featuredTag{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--featured-project-background)
+}
+
 /*
     9) SLIDESHOW (ART)
     */
@@ -320,7 +332,7 @@ html[data-theme="dark"] hr{
   z-index: 9999;
 
   border: 1px solid var(--card-border);
-  background: var(--darklight);
+  background: var(--dark-light-button-background);
   color: var(--text);
   border-radius: 999px;
 
